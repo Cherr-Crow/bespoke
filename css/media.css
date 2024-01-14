@@ -795,4 +795,8 @@
     .accessory {
        background-image: url(../assets/img/bg-ass-320.png);
     }
+
+    .hero, .about__bg, .accessory {
+        background-size: 100%;
+    }
 }

@@ -69,3 +69,11 @@ btn__catalog.addEventListener('click', (e) => {
   e.preventDefault();
   document.querySelector('.header__catalog').classList.toggle('header__catalog--active');
 })
+
+/* profile */
+
+const btn__profile = document.getElementById('btn-profile');
+
+btn__profile.addEventListener('click', () => {
+  document.querySelector('.header__authorization').classList.toggle('header__authorization--active')
+})
