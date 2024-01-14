@@ -149,8 +149,22 @@
 
             <nav class="header__nav header__nav-first nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a class="header__nav-link" href="#">Каталог</a></li>
-                    <li class="header__nav-item"><a class="header__nav-link" href="#about">О компании</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#" id="btn-catalog">Каталог</a></li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#" id="btn-about">О компании</a>
+                        <div class="header__about" id="header-about">
+                            <ul class="header_about-list">
+                                <li class="header_about-item"><a href="#about">О нас</a></li>
+                                <li class="header_about-item"><a href="#">Конструкторское бюро</a></li>
+                                <li class="header_about-item"><a href="#">Производство</a></li>
+                                <li class="header_about-item"><a href="#">Патронная лаборатория</a></li>
+                                <li class="header_about-item"><a href="#">Новости</a></li>
+                                <li class="header_about-item"><a href="#">СМИ о нас</a></li>
+                                <li class="header_about-item"><a href="#">Материалы</a></li>
+                                <li class="header_about-item"><a href="#">Партнеры</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="header__nav-item"><a class="header__nav-link" href="#">Партнеры</a></li>
                 </ul>
             </nav>
@@ -169,6 +183,20 @@
             <a class="header__phone" href="tel:+74951201888">+7 (495) 120-1-888</a>
 
             <div class="header__buttons">
+
+                <button class="header__buttons-btn header-phone">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_42_6412)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.04668 1.72624L2.1228 3.65012C1.75153 4.02138 1.5625 4.43143 1.51528 4.94642C1.44471 5.84243 1.61392 6.87307 2.1237 8.23411L2.12462 8.23659C2.95017 10.4646 4.20294 12.5594 6.094 14.8359C8.37529 17.5652 11.1213 19.712 14.2481 21.2256C15.419 21.7828 16.8907 22.3915 18.4397 22.4911C18.5287 22.4963 18.6006 22.5 18.6632 22.5C19.3774 22.5 19.882 22.2819 20.3258 21.8092C20.6717 21.3974 21.0484 21.0318 21.3836 20.7065C21.4056 20.6851 21.4274 20.664 21.449 20.643L21.4529 20.6392C21.6942 20.4082 21.91 20.197 22.113 19.9796L22.1167 19.9756L22.1204 19.9717C22.354 19.7286 22.3891 19.5696 22.3897 19.4943C22.3902 19.4252 22.3631 19.2833 22.1465 19.0667L19.01 15.9354L19.0004 15.925C18.9362 15.8559 18.8637 15.7949 18.792 15.7541C18.7227 15.7146 18.6707 15.7032 18.6321 15.7032C18.5708 15.7032 18.4238 15.7347 18.2135 15.945L16.2701 17.8884C16.1606 17.998 15.7025 18.4567 14.9711 18.4567C14.6742 18.4567 14.3924 18.3811 14.1277 18.2453C14.1003 18.2314 14.0777 18.2185 14.0691 18.2136L14.0675 18.2127C14.0675 18.2126 14.0675 18.2127 14.0675 18.2127L14.0637 18.2108L12.7752 17.5079L12.7541 17.4946C10.8722 16.2994 9.17443 14.7538 7.57478 12.7809L7.57031 12.7754C6.67234 11.6462 6.07694 10.674 5.64481 9.6358L5.63967 9.62346L5.62996 9.59756C5.62563 9.5866 5.61793 9.5666 5.61016 9.54329C5.54445 9.34617 5.46267 9.04125 5.50662 8.68375C5.55292 8.30709 5.72864 7.94658 6.05061 7.6246L6.09264 7.58257L6.10969 7.56748C6.55041 7.17726 6.9538 6.76923 7.3995 6.3184C7.43437 6.28313 7.46949 6.2476 7.50492 6.2118L7.50775 6.20895C7.58564 6.13106 7.66391 6.05153 7.74465 5.96949L7.74563 5.96849C7.82534 5.8875 7.90749 5.80403 7.99 5.72151C8.23262 5.47889 8.25777 5.33174 8.25777 5.28215C8.25777 5.23256 8.23262 5.08541 7.99 4.84279L6.43724 3.29003C6.34898 3.19924 6.26048 3.10937 6.17044 3.01803L6.16935 3.01692C6.08018 2.92648 5.98945 2.83443 5.89968 2.74204C5.85249 2.69415 5.80613 2.64702 5.76044 2.60057C5.459 2.29409 5.18689 2.01744 4.89962 1.75161L4.88656 1.73953L4.87409 1.72684C4.67933 1.52866 4.53986 1.5 4.47562 1.5C4.39671 1.5 4.24408 1.5372 4.04668 1.72624ZM7.03645 9.07572C7.40212 9.94958 7.91461 10.798 8.74218 11.839C10.2471 13.6945 11.8192 15.1205 13.5374 16.2151L14.7619 16.883C14.7864 16.8957 14.8055 16.9067 14.8117 16.9103C14.8121 16.9105 14.8125 16.9108 14.8129 16.911C14.8889 16.9499 14.9375 16.9567 14.9711 16.9567C15.0134 16.9567 15.0536 16.9442 15.0979 16.918C15.145 16.8902 15.1808 16.8564 15.2134 16.8237L17.1528 14.8843C17.544 14.4931 18.0504 14.2032 18.6321 14.2032C19.3267 14.2032 19.8299 14.6173 20.089 14.8931L23.2067 18.0056C23.6124 18.4113 23.8942 18.918 23.8896 19.5061C23.885 20.0863 23.603 20.5922 23.206 21.0069C22.9751 21.254 22.7364 21.487 22.4922 21.7208C22.4756 21.737 22.459 21.7531 22.4424 21.7692C22.0912 22.1103 21.7611 22.4308 21.4634 22.7871L21.4509 22.802L21.4377 22.8162C20.6918 23.6205 19.7782 24 18.6632 24C18.55 24 18.4359 23.9934 18.3495 23.9883L18.3457 23.9881C16.4945 23.8696 14.8047 23.1517 13.6013 22.579L13.5969 22.5769C10.2742 20.9689 7.35858 18.688 4.94244 15.7971L4.94101 15.7954C2.96445 13.4161 1.61443 11.1764 0.718508 8.75895C0.161175 7.27056 -0.0741784 6.01064 0.0203321 4.82335L0.0209599 4.81547C0.0987848 3.95291 0.438703 3.21289 1.06214 2.58946L2.9958 0.655788L3.00054 0.651219C3.40259 0.263027 3.91209 0 4.47562 0C5.03768 0 5.53632 0.26607 5.93064 0.662003C6.24137 0.950242 6.53669 1.25057 6.8323 1.55119C6.87815 1.59782 6.92401 1.64446 6.96994 1.69106L6.97372 1.6949C7.05964 1.78335 7.14715 1.87216 7.23756 1.96386L7.24025 1.9666C7.328 2.05561 7.4184 2.14731 7.5091 2.24056L9.05066 3.78213C9.45104 4.18251 9.75777 4.68873 9.75777 5.28215C9.75777 5.87557 9.45104 6.38179 9.05066 6.78218C8.97276 6.86007 8.8945 6.93959 8.81376 7.02164L8.81297 7.02244C8.73367 7.10302 8.65195 7.18606 8.56985 7.26817C8.53315 7.30526 8.49649 7.34236 8.45983 7.37945C8.0265 7.81786 7.59437 8.25507 7.12131 8.67523L7.11127 8.68526C7.05312 8.74342 7.02607 8.7864 7.01331 8.81158C7.00109 8.8357 6.99711 8.85297 6.99541 8.86675C6.99154 8.89828 6.99492 8.95097 7.02921 9.05686C7.03111 9.06168 7.03361 9.06812 7.03645 9.07572Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_42_6412">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                </button>
+
                 <button class="header__buttons-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -187,6 +215,57 @@
             </div>
         </div>
 
+        <div class="header__catalog">
+            <div class="container header__catalog-container">
+                <ul class="header__catalog-list">
+            
+                    <li class="header__catalog-item">
+                        <div class="header__catalog-block">
+                            <img src="assets/img/about-1.png" alt="gun">
+                        </div>
+                   
+                        <a href="#">RAPTOR</a>
+                    </li>
+                    <li class="header__catalog-item">
+                        <div class="header__catalog-block">
+                            <img src="assets/img/about-2.png" alt="gun">
+                        </div>
+                       
+                        <a href="#">elegance</a>
+                    </li>
+                    <li class="header__catalog-item">
+                        <div class="header__catalog-block">
+                            <img src="assets/img/about-3.png" alt="gun">
+                        </div>
+                        
+                        <a href="#">piligrim</a>
+                    </li>
+                    <li class="header__catalog-item">
+                        <div class="header__catalog-block">
+                            <img src="assets/img/about-4.png" alt="gun">
+                        </div>
+                       
+                        <a href="#">Phantom</a>
+                    </li>
+                    <li class="header__catalog-item">
+                        <div class="header__catalog-block">
+                            <img src="assets/img/about-5.png" alt="gun">
+                        </div>
+                        
+                        <a href="#">viper</a>
+                    </li>
+
+                    <li class="header__catalog-item">
+                        <div class="header__catalog-last">
+                            <img src="assets/img/about-6.png" alt="gun">
+                        </div>
+                    
+                        <a href="#">аксессуары</a>
+                    </li>
+                   </ul>
+            </div> 
+        </div>
+
         <div class="header__search">
             <form class="header__search-form" action="#">
                 <input class="header__search-input" placeholder="Поиск" type="text" id="search-input">
@@ -200,7 +279,7 @@
             <div class="hero__container">
                 <h1 class="hero__title">Высокоточное оружие</h1>
                 <p class="hero__descr">Разработано и сделано в России</p>
-                <button class="hero__btn">
+                <a class="hero__btn" href="#catalog">
                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
                         <g clip-path="url(#clip0_124_1531)">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -216,19 +295,20 @@
                             </clipPath>
                         </defs>
                     </svg>
-                </button>
+                </a>
             </div>
         </section>
 
-        <section class="catalog">
+        <section class="catalog" id="catalog">
             <ul class="catalog__list">
                 <li class="catalog__item">
                     <div class="catalog__item-first">
                         <div class="container catalog__container">
                             <span class="catalog__item-span">Серия</span>
                             <div>
-                                <picture>
+                                <picture>                               
                                     <source media="(max-width: 500px)" srcset="assets/img/raptor_logo-370.svg">
+                                    <source media="(max-width: 1024px)" srcset="assets/img/raptor_logo-1024.svg">
                                     <img src="assets/img/raptor_logo.svg" alt="raptor_logo">
                                 </picture>
                             </div>
@@ -290,7 +370,9 @@
                             <span class="catalog__item-span">Серия</span>
                             <div>
                                 <picture>
+                     
                                     <source media="(max-width: 500px)" srcset="assets/img/elegance_logo-370.svg">
+                                    <source media="(max-width: 1024px)" srcset="assets/img/elegance_logo-1024.svg">
                                     <img src="assets/img/elegance_logo.svg" alt="elegance_logo">
                                 </picture>
 
@@ -352,7 +434,9 @@
                             <span class="catalog__item-span">Серия</span>
                             <div>
                                 <picture>
+                                   
                                     <source media="(max-width: 500px)" srcset="assets/img/pilgrim_logo-370.svg">
+                                    <source media="(max-width: 1024px)" srcset="assets/img/pilgrim_logo-1024.svg">
                                     <img src="assets/img/pilgrim_logo.svg" alt="pilgrim_logo">
                                 </picture>
                             </div>
@@ -410,6 +494,7 @@
                             <div>
                                 <picture>
                                     <source media="(max-width: 500px)" srcset="assets/img/phantom_logo-370.svg">
+                                    <source media="(max-width: 1024px)" srcset="assets/img/phantom_logo-1024.svg">
                                     <img src="assets/img/phantom_logo.svg" alt="phantom_logo">
                                 </picture>
                             </div>
@@ -468,6 +553,7 @@
                             <div>
                                 <picture>
                                     <source media="(max-width: 500px)" srcset="assets/img/viper_logo-370.svg">
+                                    <source media="(max-width: 1024px)" srcset="assets/img/viper_logo-1024.svg">
                                     <img src="assets/img/viper_logo.svg" alt="viper_logo">
                                 </picture>
                             </div>

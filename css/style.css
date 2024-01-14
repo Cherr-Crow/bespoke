@@ -175,11 +175,13 @@ body::-webkit-scrollbar-thumb {
 /* menu */
 
 .header__menu-main {
-    transform: translateX(-100%);
+    transform: translateX(-300%);
     z-index: 9;
     padding-top: 45px;
     padding-left: 100px;
     position: fixed;
+    box-sizing: border-box;
+    height: 100%;
     top: 0;
     left: 0;
     bottom: 0;
@@ -196,7 +198,7 @@ body::-webkit-scrollbar-thumb {
 .header__menu-block {
     padding-top: 20px;
     padding-left: 50px;
-    height: 980px;
+    height: 100%;
     width: 400px;
     overflow-y: scroll;
     direction: rtl;
@@ -205,6 +207,61 @@ body::-webkit-scrollbar-thumb {
 .header__menu-block::-webkit-scrollbar {
     width: 2px;
 }
+
+.header__menu-address {
+    max-width: 181px;
+    margin-bottom: 26px;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142%;
+}
+
+.header__menu-phone {
+    margin-bottom: 26px;
+    display: block;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.header__menu-email {
+    display: block;
+    margin-bottom: 26px;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142%;
+}
+
+.header__menu-social {
+    display: block;
+    margin-bottom: 11px;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142%;
+}
+
+.header__menu-social span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.header__menu-socialList {
+  display: flex;
+}
+
+.header__menu-socialList:not(:last-child) {
+    margin-right: 10px;
+  }
 
 .header__menu-block::-webkit-scrollbar-track {
     background: #646464;
@@ -249,6 +306,119 @@ body::-webkit-scrollbar-thumb {
     font-style: normal;
     font-weight: 400;
     line-height: 142%;
+}
+
+.header-phone {
+    display: none;
+}
+
+/* about */
+
+.header__about {
+    padding: 42px 40px;
+    position: absolute;
+    background-color: #000;
+    color: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(255, 255, 255, 0.15);
+}
+
+.header_about-item a {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142%;
+}
+
+.header__about {
+    transform: translateY(-300%);
+    margin-left: -30px;
+    margin-top: 50px;
+    transition: .3s ease-in-out;
+}
+
+.header__about--active {
+    transform: translateY(0%);
+}
+
+.header__about-item #btn-about {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.header_about-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* catalog */
+
+.header__catalog {
+    padding-top: 68px;
+    padding-bottom: 68px;
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(255, 255, 255, 0.15);
+    transform: translateY(-300%);
+    transition: .3s ease-in-out;
+}
+
+.header__catalog--active {
+    transform: translateY(0%);
+}
+
+.header__catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header__catalog-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__catalog-item a {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.header__catalog-item {
+    position: relative;
+}
+
+.header__catalog-item a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.header__catalog-block:not(:last-child) {
+    margin-bottom: 12px;
+    padding: 12px;
+    padding-bottom: 40px;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.header__catalog-last {
+    outline: 1px solid #FFF;
+    border-radius: 20px;
 }
 
 /* search */
@@ -349,8 +519,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero__btn {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 /* catalog */
