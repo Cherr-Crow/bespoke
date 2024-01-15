@@ -131,6 +131,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header__container {
+    padding: 0 24px;
+}
+
+.header__container {
     padding-top: 31px;
     padding-bottom: 31px;
     display: -webkit-box;
@@ -602,7 +606,6 @@ body::-webkit-scrollbar-thumb {
     padding: 60px 50px;
     display: flex;
     position: absolute;
-    top: 200%;
     left: 20%;
     right: 20%;
     margin: 0 auto;
@@ -712,20 +715,39 @@ body::-webkit-scrollbar-thumb {
     font-weight: 500;
 }
 
-.header__authorization {
-    display: none;
-    transform: scale(0.2);
-    transition: .3s ease-in-out;
+.modal-overlay {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
 }
 
-.header__authorization--active {
-    display: flex;
-    transform: scale(1);
+.modal-overlay--visible {
+    z-index: 12434556;
+    opacity: 3;
+    visibility: visible;
+    transition: all .4s ease-in-out;
 }
+
+body {
+    position: relative;
+}
+
+/* modal */
 
 /* basket */
 
 .header__basket {
+    display: block;
     position: relative;
     z-index: 8776786;
     padding: 45px;
@@ -740,6 +762,25 @@ body::-webkit-scrollbar-thumb {
 
 .header__basket-item {
     display: flex;
+}
+
+.header__basket-second {
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.header__basket-second::-webkit-scrollbar {
+    width: 2px;
+}
+
+.header__basket-second::-webkit-scrollbar-track {
+    background: rgb(73, 73, 73);
+}
+
+.header__basket-second::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border: 4px solid #fff;
 }
 
 .header__basket-exit {
@@ -794,6 +835,51 @@ body::-webkit-scrollbar-thumb {
     font-style: normal;
     font-weight: 400;
     line-height: 142%;
+}
+
+.header__basket-img {
+    margin-right: 30px;
+    padding: 18px;
+    background: 0;
+    border-radius: 20px;
+}
+
+.header__basket-block h4 {
+    margin-bottom: 10px;
+    color: var(--white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header__basket-block p {
+    max-width: 294px;
+    margin-bottom: 18px;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142%;
+}
+
+.header__basket-block a {
+    display: block;
+    color: var(--white, #FFF);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.header__basket-item {
+    margin-bottom: 40px;
+}
+
+.header__basket {
+    display: none;
 }
 
 /* catalog */

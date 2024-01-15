@@ -73,7 +73,21 @@ btn__catalog.addEventListener('click', (e) => {
 /* profile */
 
 const btn__profile = document.getElementById('btn-profile');
+const profile = document.querySelector('.modal-overlay');
+const body = document.body;
 
-btn__profile.addEventListener('click', () => {
-  document.querySelector('.header__authorization').classList.toggle('header__authorization--active')
-})
+btn__profile.addEventListener('click', (e) => {
+  e._isClick = true;
+  document.querySelector('.modal-overlay').classList.toggle('modal-overlay--visible')
+});
+
+document.querySelector('.header__authorization').addEventListener('click', function(e) {
+  console.log('кдик по форму');
+  e._isClick = true;
+});
+
+body.addEventListener('click', function(e) {
+ if (e._isClick == true) return;
+ document.querySelector('.modal-overlay').classList.remove('modal-overlay--visible')
+});
+

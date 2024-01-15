@@ -200,7 +200,7 @@
                     </svg>
                 </button>
 
-                <button class="header__buttons-btn" id="btn-profile">
+                <button class="header__buttons-btn btn-profile" id="btn-profile">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M20.3767 15.6977C22.5586 14.269 24 11.8028 24 9C24 4.58172 20.4183 1 16 1C11.5817 1 8 4.58172 8 9C8 11.8028 9.44138 14.269 11.6233 15.6977C6.03481 17.5353 2 22.7965 2 29V31H30V29C30 22.7965 25.9652 17.5353 20.3767 15.6977ZM16 15C19.3137 15 22 12.3137 22 9C22 5.68629 19.3137 3 16 3C12.6863 3 10 5.68629 10 9C10 12.3137 12.6863 15 16 15ZM16 17C10.054 17 5.11807 21.3246 4.16592 27C4.0568 27.6504 4 28.3186 4 29H28C28 28.3186 27.9432 27.6504 27.8341 27C26.8819 21.3246 21.946 17 16 17Z"
@@ -276,23 +276,25 @@
             </form>
         </div>
 
-        <div class="header__authorization">
-            <div class="header__authorization-btns">
-                <button class="header__authorization-btn">Войти</button>
-                <button class="header__authorization-btn">Зарегистрироваться</button>
-            </div>
-
-            <h3 class="header__authorization-title">Введите ваш логин и пароль</h3>
-
-            <form class="header__authorization-form" action="#">
-                <input class="header__authorization-input" type="text" placeholder="Логин">
-                <input class="header__authorization-input" type="text" placeholder="Пароль">
-                <button class="header__authorization-enter">Войти</button>
-            </form>
-
-            <div class="header__authorization-link">
-                <span>Соглашаюсь с</span>
-                <a href="#">политикой конфиденциальности.</a>
+        <div class="modal-overlay">
+            <div class="header__authorization">
+                <div class="header__authorization-btns">
+                    <button class="header__authorization-btn">Войти</button>
+                    <button class="header__authorization-btn">Зарегистрироваться</button>
+                </div>
+    
+                <h3 class="header__authorization-title">Введите ваш логин и пароль</h3>
+    
+                <form class="header__authorization-form" action="#">
+                    <input class="header__authorization-input" type="text" placeholder="Логин">
+                    <input class="header__authorization-input" type="text" placeholder="Пароль">
+                    <button class="header__authorization-enter">Войти</button>
+                </form>
+    
+                <div class="header__authorization-link">
+                    <span>Соглашаюсь с</span>
+                    <a href="#">политикой конфиденциальности.</a>
+                </div>
             </div>
         </div>
 
@@ -325,56 +327,57 @@
                 <ul class="header__basket-list">
 
                     <li class="header__basket-item">
-                         <div class="header__basket-img">
+                        <div class="header__basket-img">
                             <img src="assets/img/basket-1.png" alt="basket">
-                         </div>
+                        </div>
 
-                         <div class="header__basket-block">
+                        <div class="header__basket-block">
                             <h4>
                                 Raptor
                             </h4>
 
                             <p>Алюминиевая ложа со складным прикладом.</p>
                             <a href="#">Подробнее</a>
-                         </div>    
+                        </div>
                     </li>
 
                     <li class="header__basket-item">
-                        <div>
+                        <div class="header__basket-img">
                             <img src="assets/img/basket-2.png" alt="basket">
                         </div>
-                        <div>
+                        <div class="header__basket-block">
                             <h4>Elegance</h4>
                             <p>
                                 Алюминиевая ложа со складным прикладом.
                             </p>
                             <a href="#">Подробнее</a>
-                        </div>  
+                        </div>
                     </li>
 
                     <li class="header__basket-item">
-                        <div>
+                        <div class="header__basket-img">
                             <img src="assets/img/basket-3.png" alt="basket">
                         </div>
-                        <div>
+                        <div class="header__basket-block">
                             <h4>Pilgrim</h4>
                             <p>
                                 Алюминиевая ложа со складным прикладом.
                             </p>
                             <a href="#">Подробнее</a>
-                        </div>  
+                        </div>
                     </li>
-                   
+
                     <li class="header__basket-item">
-                        <div>
+                        <div class="header__basket-img">
                             <img src="assets/img/basket-4.png" alt="basket">
                         </div>
-                        <div>
+                        <div class="header__basket-block">
                             <h4>Raptor</h4>
                             <p>Алюминиевая ложа со складным прикладом.</p>
                             <a href="#">Подробнее</a>
-                        </div>  
+                        </div>
                     </li>
+
                 </ul>
             </div>
         </div>
