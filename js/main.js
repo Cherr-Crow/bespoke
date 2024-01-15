@@ -82,7 +82,6 @@ btn__profile.addEventListener('click', (e) => {
 });
 
 document.querySelector('.header__authorization').addEventListener('click', function(e) {
-  console.log('кдик по форму');
   e._isClick = true;
 });
 

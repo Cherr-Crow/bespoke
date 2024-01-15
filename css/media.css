@@ -1,3 +1,10 @@
+@media (max-width: 1800px) {
+    .header__container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
 @media(max-width: 1600px) {
     .catalog__item-block:first-child {
         margin-right: 74px;
@@ -140,6 +147,14 @@
     }
 
 
+    .footer__container {
+        flex-wrap: wrap;
+    }
+
+    .footer__first {
+        margin-bottom: 40px;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -253,6 +268,18 @@
     .footer__second {
         margin-bottom: 40px;
     }
+
+    .footer__second-item {
+        margin-bottom: 40px;
+    }
+
+    .footer__second-listOfLinks {
+        margin-bottom: 40px;
+    }
+
+    .footer__container {
+        flex-wrap: nowrap;
+    }
 }
 
 @media (max-width: 960px) {
@@ -350,8 +377,6 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     }
 
     .footer__first {
@@ -458,6 +483,19 @@
         padding-top: 31px;
         padding-bottom: 31px;
     }
+
+    .hero {
+        background-image: url(../assets/img/bg-hero-960.png);
+        background-repeat: repeat;
+    }
+
+    .footer__second-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .footer__second-item {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -503,11 +541,6 @@
 
     .header__menu-block {
         padding-left: 50px;
-    }
-
-    .hero {
-        background-image: url(../assets/img/hero-bg-370.png);
-        background-repeat: repeat;
     }
 
     .header__container {
@@ -822,5 +855,12 @@
     .about__bg,
     .accessory {
         background-size: 100%;
+    }
+}
+
+@media (max-width: 370px) {
+    .hero {
+        background-image: url(../assets/img/hero-bg-370.png);
+        background-repeat: repeat;
     }
 }
